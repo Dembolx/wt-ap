@@ -4,19 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Walentynki</title>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Chcesz zostać moją dziewczyną?</h1>
-    <form id="responseForm">
-      <button type="submit" class="responseButton" data-response="yes">Tak</button>
-      <button type="submit" class="responseButton" data-response="no">Nie</button>
-    </form>
-    <p id="confirmation"></p>
-  </div>
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
-  <script src="app.js"></script>
+  <h1>Witaj na mojej stronie Walentynkowej!</h1>
+  <p>Czy zostaniesz moją dziewczyną?</p>
+  <button onclick="sendAnswer('Tak')">Tak</button>
+  <button onclick="sendAnswer('Nie')">Nie</button>
+
+  <script>
+    function sendAnswer(answer) {
+      alert(`Twoja odpowiedź: ${answer}`);
+    }
+  </script>
 </body>
 </html>
